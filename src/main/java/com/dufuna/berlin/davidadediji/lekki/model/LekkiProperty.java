@@ -1,21 +1,19 @@
 package com.dufuna.berlin.davidadediji.lekki.model;
 
-import com.dufuna.berlin.davidadediji.lekki.Address;
-import com.dufuna.berlin.davidadediji.lekki.Owner;
 import com.dufuna.berlin.davidadediji.lekki.enums.PropertyType;
 import java.util.Date;
 
 
 public class LekkiProperty {
     private int propertyId;
-    private Address propertyAddress;
+    private String propertyAddress;
     private PropertyType type;
-    private int bedroomNumber;
-    private int sittingRoomNumber;
-    private int kitchenNumber;
-    private int bathroomNumber;
-    private int toiletNumber;
-    private Owner owner;
+    private int numberOfBedrooms;
+    private int numberOfSittingrooms;
+    private int numberOfKitchen;
+    private int numberOfBathroom;
+    private int numberOfToilet;
+    private String owner;
     private String description;
     private Date validFrom;
     private Date validTo;
@@ -29,11 +27,11 @@ public class LekkiProperty {
         this.propertyId = propertyId;
     }
 
-    public Address getPropertyAddress() {
+    public String getPropertyAddress() {
         return propertyAddress;
     }
 
-    public void setPropertyAddress(Address propertyAddress) {
+    public void setPropertyAddress(String propertyAddress) {
         this.propertyAddress = propertyAddress;
     }
 
@@ -46,50 +44,50 @@ public class LekkiProperty {
     }
 
     public int getBedroomNumber() {
-        return bedroomNumber;
+        return numberOfBedrooms;
     }
 
-    public void setBedroomNumber(int bedroomNumber) {
-        this.bedroomNumber = bedroomNumber;
+    public void setBedroomNumber(int numberOfBedrooms) {
+        this.numberOfBedrooms = numberOfBedrooms;
     }
 
     public int getSittingRoomNumber() {
-        return sittingRoomNumber;
+        return numberOfSittingrooms;
     }
 
-    public void setSittingRoomNumber(int sittingRoomNumber) {
-        this.sittingRoomNumber = sittingRoomNumber;
+    public void setSittingRoomNumber(int numberOfSittingrooms) {
+        this.numberOfSittingrooms = numberOfSittingrooms;
     }
 
     public int getKitchenNumber() {
-        return kitchenNumber;
+        return numberOfKitchen;
     }
 
-    public void setKitchenNumber(int kitchenNumber) {
-        this.kitchenNumber = kitchenNumber;
+    public void setKitchenNumber(int numberOfKitchen) {
+        this.numberOfKitchen = numberOfKitchen;
     }
 
     public int getBathroomNumber() {
-        return bathroomNumber;
+        return numberOfBathroom;
     }
 
-    public void setBathroomNumber(int bathroomNumber) {
-        this.bathroomNumber = bathroomNumber;
+    public void setBathroomNumber(int numberOfBathroom) {
+        this.numberOfBathroom = numberOfBathroom;
     }
 
     public int getToiletNumber() {
-        return toiletNumber;
+        return numberOfToilet;
     }
 
-    public void setToiletNumber(int toiletNumber) {
-        this.toiletNumber = toiletNumber;
+    public void setToiletNumber(int numberOfToilet) {
+            this.numberOfToilet = numberOfToilet;
     }
 
-    public Owner getOwner() {
+    public String getOwner() {
         return owner;
     }
 
-    public void setOwner(Owner owner) {
+    public void setOwner(String owner) {
         this.owner = owner;
     }
 
@@ -117,5 +115,20 @@ public class LekkiProperty {
         this.validTo = validTo;
     }
 
+    @Override
+    public String toString(){
+        return propertyId + ", "+ propertyAddress + ", " + type;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        LekkiProperty property = (LekkiProperty) obj;
+        return this.getPropertyId() == property.getPropertyId();
+    }
+
+    @Override
+    public int hashCode(){
+        return propertyId;
+    }
 
 }
