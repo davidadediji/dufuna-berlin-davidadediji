@@ -14,11 +14,6 @@ public class MockLekkiPropertyApp {
         String[] address = {"Lagos", "Ibadan", "Greenwich"};
         PropertyType[] types = {PropertyType.DUPLEX, PropertyType.FLAT, PropertyType.HOUSE};
 
-
-//
-//        newService.saveProperty(davidProperty1);
-//        newService.getProperty();
-
         for(int i = 0; i < address.length; i++ ){
             LekkiProperty property = new LekkiProperty(i, address[i], types[i]);
             service.saveProperty(property);
