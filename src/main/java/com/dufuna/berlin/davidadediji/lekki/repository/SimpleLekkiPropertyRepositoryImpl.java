@@ -18,27 +18,16 @@ public class SimpleLekkiPropertyRepositoryImpl implements SimpleLekkiPropertyRep
 
     @Override
     public LekkiProperty findById(int propertyId) {
-        for(Map.Entry<Integer, LekkiProperty> property: properties.entrySet()){
-            if (propertyId == property.getKey()){
-                return property.getValue();
-            }
-        }
-        return null;
+        return properties.get(propertyId);
     }
     @Override
     public List<LekkiProperty> findAll() {
-        List<LekkiProperty> propertyList = new ArrayList<>(properties.values());
-        return propertyList;
+        return properties.values().stream().toList();
     }
 
     @Override
     public void update(int id, LekkiProperty property) {
-        for(Map.Entry<Integer, LekkiProperty> propertyUpdate: properties.entrySet()){
-            if(property.getPropertyId() == id){
-                propertyUpdate.setValue(property);
-            }
-
-        }
+        properties.put(property.getPropertyId(), property);
     }
 
 }
