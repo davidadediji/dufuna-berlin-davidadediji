@@ -1,14 +1,30 @@
 package com.dufuna.berlin.davidadediji.lekki;
 
+import com.dufuna.berlin.davidadediji.lekki.enums.PropertyType;
 import com.dufuna.berlin.davidadediji.lekki.model.LekkiProperty;
+import com.dufuna.berlin.davidadediji.lekki.service.LekkiPropertyService;
 import com.dufuna.berlin.davidadediji.lekki.service.MockLekkiPropertyService;
+
+import java.util.Arrays;
 
 public class MockLekkiPropertyApp {
     public static void main(String[] args) {
-        LekkiProperty davidProperty1 = new LekkiProperty();
-        MockLekkiPropertyService newService = new MockLekkiPropertyService();
+        LekkiPropertyService service = new MockLekkiPropertyService();
 
-        newService.saveProperty(davidProperty1);
-        newService.getProperty();
+        String[] address = {"Lagos", "Ibadan", "Greenwich"};
+        PropertyType[] types = {PropertyType.DUPLEX, PropertyType.FLAT, PropertyType.HOUSE};
+
+
+//
+//        newService.saveProperty(davidProperty1);
+//        newService.getProperty();
+
+        for(int i = 0; i < address.length; i++ ){
+            LekkiProperty property = new LekkiProperty(i, address[i], types[i]);
+            service.saveProperty(property);
+            System.out.println(service.getProperty(i));
+
+        }
+        System.out.println(service.getproperties());
     }
 }

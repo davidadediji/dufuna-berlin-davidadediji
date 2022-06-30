@@ -18,6 +18,14 @@ public class LekkiProperty {
     private Date validFrom;
     private Date validTo;
 
+    public LekkiProperty() {
+    }
+
+    public LekkiProperty(int propertyId, String propertyAddress, PropertyType type) {
+        this.propertyId = propertyId;
+        this.propertyAddress = propertyAddress;
+        this.type = type;
+    }
 
     public int getPropertyId() {
         return propertyId;
@@ -81,7 +89,7 @@ public class LekkiProperty {
 
     public void setToiletNumber(int numberOfToilet) {
             this.numberOfToilet = numberOfToilet;
-    }
+     }
 
     public String getOwner() {
         return owner;
@@ -122,8 +130,10 @@ public class LekkiProperty {
 
     @Override
     public boolean equals(Object obj) {
-        LekkiProperty property = (LekkiProperty) obj;
-        return this.getPropertyId() == property.getPropertyId();
+        if (obj instanceof LekkiProperty property) {
+            return this.getPropertyId() == property.getPropertyId();
+        }
+        return false;
     }
 
     @Override
