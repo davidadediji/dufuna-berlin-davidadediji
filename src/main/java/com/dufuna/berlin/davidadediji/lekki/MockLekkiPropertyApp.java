@@ -5,7 +5,6 @@ import com.dufuna.berlin.davidadediji.lekki.model.LekkiProperty;
 import com.dufuna.berlin.davidadediji.lekki.service.LekkiPropertyService;
 import com.dufuna.berlin.davidadediji.lekki.service.MockLekkiPropertyService;
 
-import java.util.Arrays;
 
 public class MockLekkiPropertyApp {
     public static void main(String[] args) {

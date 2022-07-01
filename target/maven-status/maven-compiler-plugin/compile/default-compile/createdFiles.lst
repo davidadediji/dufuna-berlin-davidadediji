@@ -1,0 +1,8 @@
+com/dufuna/berlin/davidadediji/lekki/model/LekkiProperty.class
+com/dufuna/berlin/davidadediji/lekki/service/MockLekkiPropertyService.class
+com/dufuna/berlin/davidadediji/lekki/service/LekkiPropertyService.class
+com/dufuna/berlin/davidadediji/lekki/repository/SimpleLekkiPropertyRepositoryImpl.class
+com/dufuna/berlin/davidadediji/lekki/repository/SimpleLekkiPropertyRepository.class
+com/dufuna/berlin/davidadediji/address/AddressApp.class
+com/dufuna/berlin/davidadediji/lekki/MockLekkiPropertyApp.class
+com/dufuna/berlin/davidadediji/lekki/enums/PropertyType.class
