@@ -1,5 +1,4 @@
 package com.dufuna.berlin.davidadediji.lekki.repository;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +26,7 @@ public class SimpleLekkiPropertyRepositoryImpl implements SimpleLekkiPropertyRep
 
     @Override
     public void update(int id, LekkiProperty property) {
-        properties.put(property.getPropertyId(), property);
+        properties.replace(property.getPropertyId(), property);
     }
 
 }

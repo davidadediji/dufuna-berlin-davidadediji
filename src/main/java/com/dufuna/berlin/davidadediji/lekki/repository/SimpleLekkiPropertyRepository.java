@@ -1,5 +1,7 @@
 package com.dufuna.berlin.davidadediji.lekki.repository;
 import java.util.List;
+import java.util.Map;
+
 import com.dufuna.berlin.davidadediji.lekki.model.LekkiProperty;
 
 public interface SimpleLekkiPropertyRepository {
