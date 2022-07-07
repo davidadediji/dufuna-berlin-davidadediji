@@ -1,7 +1,7 @@
 
 # Java Training - Dufuna
 
-A crash course on java programming language to give an headstart into programming as a java developer. It aims to cover the basics of
+A crash course on java programming language to give an headstart into programming as a java developer. It aims to cover
 - Java Basics
 - Maven
 - Spring framework
