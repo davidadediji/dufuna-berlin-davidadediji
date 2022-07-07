@@ -21,7 +21,7 @@ public class MockLekkiPropertyService implements LekkiPropertyService {
 
     @Override
     public List<LekkiProperty> getproperties() {
-        return repository.findAll();
+        return (List<LekkiProperty>) repository.findAll();
     }
 
 }
