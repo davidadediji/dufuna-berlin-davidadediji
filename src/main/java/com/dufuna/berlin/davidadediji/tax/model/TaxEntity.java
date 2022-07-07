@@ -1,5 +1,8 @@
 package com.dufuna.berlin.davidadediji.tax.model;
 
+/**
+ *
+ */
 public class TaxEntity {
     //High and low income ranges
     public final static int LOW_INCOME_BRACKET_ONE = 0;

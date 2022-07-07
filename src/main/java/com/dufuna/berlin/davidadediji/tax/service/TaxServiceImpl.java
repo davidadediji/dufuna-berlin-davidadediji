@@ -5,7 +5,12 @@ import org.springframework.stereotype.Service;
 
 
 public class TaxServiceImpl implements TaxService{
-
+    /**
+     * Calculates taxOwed from an income tax
+     * @param income The value will be non-negative
+     * If a negative income value is give an exception "Number cannot be less or equal to zero"
+     * @return double type. The value will always be a non-negative
+     */
     @Override
     public double getTaxOwed(int income) {
         if (income <= 0){
