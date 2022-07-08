@@ -21,7 +21,8 @@ public class TaxServiceImpl implements TaxService{
             double taxOwed = Math.round((TaxEntity.HIGH_INCOME_BRACKET_TWO - TaxEntity.LOW_INCOME_BRACKET_TWO)*TaxEntity.RATE_TWO);
             return taxOwed;
         } else if (income <= TaxEntity.HIGH_INCOME_BRACKET_FOUR) {
-            double taxOwed = Math.round(((TaxEntity.HIGH_INCOME_BRACKET_TWO - TaxEntity.LOW_INCOME_BRACKET_TWO)*TaxEntity.RATE_TWO) + (TaxEntity.HIGH_INCOME_BRACKET_THREE - TaxEntity.LOW_INCOME_BRACKET_THREE)*TaxEntity.RATE_THREE);
+            double taxOwed = Math.round(((TaxEntity.HIGH_INCOME_BRACKET_TWO - TaxEntity.LOW_INCOME_BRACKET_TWO)*TaxEntity.RATE_TWO) +
+                    (TaxEntity.HIGH_INCOME_BRACKET_THREE - TaxEntity.LOW_INCOME_BRACKET_THREE)*TaxEntity.RATE_THREE);
             return taxOwed;
         }double taxOwed = Math.round(((TaxEntity.HIGH_INCOME_BRACKET_TWO - TaxEntity.LOW_INCOME_BRACKET_TWO)*TaxEntity.RATE_TWO) +
                     ((TaxEntity.HIGH_INCOME_BRACKET_THREE - TaxEntity.LOW_INCOME_BRACKET_THREE)*TaxEntity.RATE_THREE) +
