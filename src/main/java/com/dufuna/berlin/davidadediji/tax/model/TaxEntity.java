@@ -7,7 +7,6 @@ public class TaxEntity {
     //High and low income ranges
     public final static int LOW_INCOME_BRACKET_ONE = 0;
     public final static int HIGH_INCOME_BRACKET_ONE = 18200;
-
     public final static int LOW_INCOME_BRACKET_TWO = 18201;
     public final static int HIGH_INCOME_BRACKET_TWO = 37000;
 
