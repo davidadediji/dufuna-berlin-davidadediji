@@ -1,8 +1,14 @@
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/tax/service/TaxService.java
 /home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/model/LekkiProperty.java
 /home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/repository/SimpleLekkiPropertyRepository.java
-/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/service/LekkiPropertyService.java
 /home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/enums/PropertyType.java
-/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/address/AddressApp.java
 /home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/MockLekkiPropertyApp.java
-/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/repository/SimpleLekkiPropertyRepositoryImpl.java
 /home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/service/MockLekkiPropertyService.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/tax/service/TaxServiceImpl.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/service/LekkiPropertyService.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/address/AddressApp.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/tax/dto/TaxResponseDTO.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/tax/controller/TaxEntityController.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/tax/model/TaxEntity.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/lekki/repository/SimpleLekkiPropertyRepositoryImpl.java
+/home/davidadediji/workspace/address/src/main/java/com/dufuna/berlin/davidadediji/tax/IncomeTaxApp.java
