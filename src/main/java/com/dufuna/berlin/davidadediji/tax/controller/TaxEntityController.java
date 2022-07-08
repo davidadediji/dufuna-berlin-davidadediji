@@ -6,9 +6,18 @@ import com.dufuna.berlin.davidadediji.tax.service.TaxService;
 import com.dufuna.berlin.davidadediji.tax.service.TaxServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * TaxEntityController - http class for Tax entity calculation
+ */
 @RestController
 @RequestMapping("/api/v1")
 public class TaxEntityController {
+
+    /**
+     *
+     * @param amount in integer
+     * @return TaxResponse as Response entity
+     */
 
     @GetMapping("/{amount}")
     public TaxResponseDTO getTaxOwed(@PathVariable Integer amount){
