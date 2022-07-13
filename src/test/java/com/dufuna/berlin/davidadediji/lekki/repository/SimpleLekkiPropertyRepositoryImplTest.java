@@ -62,7 +62,7 @@ class SimpleLekkiPropertyRepositoryImplTest {
         LekkiProperty ppt1 = new LekkiProperty(1, "Bond Chemical", PropertyType.FLAT);
         LekkiProperty ppt2 = new LekkiProperty(2, "Tokunbo street", PropertyType.DUPLEX);
         LekkiProperty saveProperty1 = repository.save(ppt1);
-//        LekkiProperty saveProperty2 = repository.save(ppt2);
+        //LekkiProperty saveProperty2 = repository.save(ppt2);
         repository.update(1, ppt2);
         assertEquals(ppt2, repository.findById(1));
     }

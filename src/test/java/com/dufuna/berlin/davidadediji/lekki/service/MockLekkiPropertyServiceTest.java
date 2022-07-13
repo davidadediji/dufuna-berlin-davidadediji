@@ -12,6 +12,7 @@ class MockLekkiPropertyServiceTest {
     LekkiPropertyService service = new MockLekkiPropertyService();
 
     @Test
+    @DisplayName("test to save property and confirm saved property object")
     void saveProperty() {
         LekkiProperty ppt1 = new LekkiProperty(1, "Bond Chemical", PropertyType.FLAT);
         LekkiProperty saveProperty = service.saveProperty(ppt1);
@@ -20,6 +21,7 @@ class MockLekkiPropertyServiceTest {
     }
 
     @Test
+    @DisplayName("test save property")
     void getPropertyPassOnIdInputTest() {
         LekkiProperty ppt1 = new LekkiProperty(1, "Bond Chemical", PropertyType.FLAT);
         LekkiProperty ppt2 = new LekkiProperty(2, "Tokunbo street", PropertyType.DUPLEX);

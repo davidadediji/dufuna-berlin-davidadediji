@@ -4,14 +4,17 @@ package com.dufuna.berlin.davidadediji.tax.controller;
 import com.dufuna.berlin.davidadediji.tax.dto.TaxResponseDTO;
 import com.dufuna.berlin.davidadediji.tax.service.TaxService;
 import com.dufuna.berlin.davidadediji.tax.service.TaxServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.lang.annotation.Documented;
 
 /**
  * TaxEntityController - http class for Tax entity calculation
  */
+
 @RestController
 @RequestMapping("/api/v1")
+
 public class TaxEntityController {
 
     /**
