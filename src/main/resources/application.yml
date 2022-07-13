@@ -1,0 +1,13 @@
+server:
+  port:8081
+spring:
+  h2:
+    console:
+      enabled:true
+
+keycloak:
+  realm: spring-keycloak
+  auth-server-url: http://localhost:8080/auth
+  resource: demoapp
+  public-client: true
+  bearer-only: true
