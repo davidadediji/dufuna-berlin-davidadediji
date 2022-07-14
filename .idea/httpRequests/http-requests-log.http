@@ -1,3 +1,91 @@
+GET http://localhost:8080/api/v1/0.0
+
+<> f-1.txt
+
+###
+
+GET http://localhost:8080/api/v1/0.0
+
+<> f.txt
+
+###
+
+GET http://localhost:8080/api/v1/0
+
+<> 2022-07-10T140033.500.json
+
+###
+
+GET http://localhost:8080/api/v1/560000
+
+<> 2022-07-10T134936.200.json
+
+###
+
+GET http://localhost:8080/api/v1/560000
+
+<> 2022-07-10T134933.200.json
+
+###
+
+GET http://localhost:8080/api/v1/250000
+
+<> 2022-07-10T134921.200.json
+
+###
+
+GET http://localhost:8080/api/v1/200000
+
+<> 2022-07-10T134909.200.json
+
+###
+
+GET http://localhost:8080/api/v1/200000
+
+<> 2022-07-10T134711.200.json
+
+###
+
+GET http://localhost:8080/api/v1/200000
+
+<> 2022-07-10T134703.200.json
+
+###
+
+GET http://localhost:8080/api/v1/123000
+
+<> 2022-07-10T134639.200.json
+
+###
+
+GET http://localhost:8080/api/v1/123000
+
+<> 2022-07-10T134634.200.json
+
+###
+
+GET http://localhost:8080/api/v1/35000
+
+<> 2022-07-10T134622.200.json
+
+###
+
+GET http://localhost:8080/api/v1/35000
+
+<> 2022-07-10T134457.404.html
+
+###
+
+GET http://localhost:8080/api/v1/{{amount}}
+
+###
+
+GET http://localhost:8080/api/v1/0
+
+<> 2022-07-08T132336.500.json
+
+###
+
 GET http://localhost:8080/api/v1/120000
 
 ###

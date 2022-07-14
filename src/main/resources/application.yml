@@ -1,0 +1,8 @@
+
+keycloak:
+  auth-server-url: http://localhost:8081/
+  public-client: true
+  bearer-only: true
+  resource: user-access-app
+server:
+  port: 8082
