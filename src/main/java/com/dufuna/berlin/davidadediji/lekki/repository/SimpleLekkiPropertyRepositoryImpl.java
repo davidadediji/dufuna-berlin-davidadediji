@@ -11,12 +11,11 @@ public class SimpleLekkiPropertyRepositoryImpl implements SimpleLekkiPropertyRep
 
     @Override
     public LekkiProperty save(LekkiProperty property) {
-        properties.put(property.getPropertyId(), property);
+        if (property.getPropertyId() != 0) {
+            properties.put(property.getPropertyId(), property);
+        }
         return property;
     }
-
-    //create lekki property
-    //
 
     @Override
     public LekkiProperty findById(int propertyId) {
